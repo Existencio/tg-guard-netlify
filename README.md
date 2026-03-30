@@ -19,6 +19,19 @@ The bot is deployed as a serverless function using Netlify and processes incomin
 - Automatic commenting in the discussion thread
 - Stateless architecture with temporary persistence
 
+## Demo
+
+The bot automatically detects incomplete posts and enforces content rules across the channel, repair chat, and discussion threads:
+
+### 1. Original post (missing translation)
+![Original Post](assets/example-post.png)
+
+### 2. Detection and forwarding to repair chat
+![Repair Chat](assets/example-repost-to-repair-group.png)
+
+### 3. Automatic comment in discussion
+![Discussion Comment](assets/example-bot-comment.png)
+
 ## Architecture
 
 The application follows a serverless, event-driven design:
